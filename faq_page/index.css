@@ -1,0 +1,97 @@
+html, body {
+  background: #eee;
+  color: #5b5b5b;
+ }
+ 
+ body {
+  padding: 20px;
+  background: linear-gradient(180deg, rgba(32,183,175,1) 0%, rgba(32,183,175,1) 160px, rgba(238,238,238,1) 160px, rgba(238,238,238,1) 100%);
+ }
+
+ h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 3rem;
+  margin: 0 0 50px;
+ }
+ 
+ .background {
+  background: #20B7AF;
+  position: absolute;
+  bottom: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+ }
+ 
+ .wrapper {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5);
+ }
+ 
+ input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+ }
+ 
+ label {
+  position: relative;
+  display: block;
+  padding: 16px 0;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 1em;
+  line-height: 1.2em;
+  cursor: pointer;
+  user-select: none;
+ }
+ label:after {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  margin-top: -10px;
+  height: 20px;
+  content: ">";
+  line-height: 20px;
+  transform: rotate(90deg);
+ }
+ label i, p {
+  display: inline-block;
+  vertical-align: middle; 
+ }
+ label i {
+  font-size: 1.2em;
+  margin: 0 10px;
+  color: #20B7AF;
+ }
+ 
+ section {
+  overflow: hidden;
+  height: 0;
+ }
+ section p {
+  margin: 0;
+  padding: 16px;
+  border-bottom: 1px solid #e0e0e0;
+  color: #999;
+  font-size: 1em;
+  line-height: 1.2em;
+ }
+ 
+ #question1:checked ~ label[for*="1"]:after,
+ #question2:checked ~ label[for*="2"]:after,
+ #question3:checked ~ label[for*="3"]:after,
+ #question4:checked ~ label[for*="4"]:after {
+  transform: rotate(270deg);
+ }
+ 
+ #question1:checked ~ #answer1,
+ #question2:checked ~ #answer2,
+ #question3:checked ~ #answer3,
+ #question4:checked ~ #answer4 {
+  height: auto;
+ }
+ 
