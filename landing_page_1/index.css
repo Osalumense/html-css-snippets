@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 1170px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: auto;
+}
+
+/* Start Landing Page */
+
+.landing-page {
+    position: relative;
+    background-color: #FFF;
+}
+
+.landing-page .header-area {
+    display: flex;
+    padding: 25px 0 0;
+    position: relative;
+}
+
+.landing-page .header-area .logo {
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    width: 300px;
+    color: #5d5d5d;
+}
+
+.landing-page .header-area .links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: right;
+}
+
+.landing-page .header-area .links li {
+    display: inline-block;
+    margin-left: 30px;
+    color: #5d5d5d;
+    cursor: pointer;
+}
+
+.landing-page .info {
+    width: 35%;
+    float: left;
+    margin-top: 130px;
+}
+
+.landing-page .info h1 {
+    font-size: 44px;
+    margin: 0 0 20px;
+    line-height: 1.4;
+    color: #5d5d5d;
+}
+
+.landing-page .info p {
+    margin: 0 0 40px;
+    line-height: 1.6;
+    font-size: 15px;
+    color: #5d5d5d;
+}
+
+.button {
+    border: 0;
+    border-radius: .5rem;
+    padding: 12px 30px;
+    cursor: pointer;
+    color: #FFF !important;
+    background-color: #6c63ff;
+    transition: all .3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #504ac1;
+}
+
+.button-inverse {
+    border: 2px solid #6c63ff;
+    border-radius: .5rem;
+    padding: 12px 30px;
+    cursor: pointer;
+    color: #6c63ff;
+    background: none;
+    transition: all .3s ease-in-out;
+}
+.button-inverse:hover {
+    background-color: #504ac1;
+    color: #fff;
+}
+
+.landing-page .image {
+    width: 50%;
+    float: right;
+    margin-top: 35px;
+}
+
+.landing-page .image img {
+    max-width: 100%;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.info-base {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 70px
+}
+
+/* End Landing Page */
